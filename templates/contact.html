@@ -1,0 +1,69 @@
+
+
+{% extends "index.html" %}
+{% block head %}
+<meta charset="UTF-8">
+<title>Xhatoid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+<style>
+.columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  max-height: 100vh;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="columns w-row">
+    <div class="leftcontent w-col w-col-6 w-col-stack">
+        <div>
+            <p>
+            Contact us.
+            LeafLanguageInstitute@gmail.com
+
+            KLeafKorean@gmail.com
+
+            Now accepting questions, resumes, event proposals, collaborations, partnerships and more!
+        </p>
+
+        </div>
+
+
+    </div>
+
+    <div class="rightcontent w-col w-col-6 w-col-stack">
+        <h1>Elegant Contact Form</h1>
+        <form class="cf">
+          <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name">
+            <input type="email" id="input-email" placeholder="Email address">
+            <input type="text" id="input-subject" placeholder="Subject">
+          </div>
+          <div class="half right cf">
+            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" value="Submit" id="input-submit">
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

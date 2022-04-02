@@ -1,0 +1,196 @@
+{% extends "index.html" %}
+{% block head %}
+<meta charset="UTF-8">
+<title>Xhatoid</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+{% endblock %}
+
+{% block content %}
+
+
+
+<center>
+    <h1 style="color: white; padding: 10px 0;">
+        Projects from my Github
+    </h1>
+</center>
+
+<div class="container_">
+    <hr>
+
+    <div class="col-lg-10 col-md-10 col-sm-10 mx-auto" >
+        <div class="row post-preview">
+            <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+                <a href="https://github.com/LeonelGodoy/Insurance-Competitive-Dashboard" target="_blank">
+                    <img class="portfolio-photo" src="static/css/images/vega.jpg">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-9 col-xs-9">
+                <h2 class="post-title">
+                    <a href="https://github.com/LeonelGodoy/Insurance-Competitive-Dashboard" target="_blank">
+                        Insurance-Competitive-Dashboard
+                    </a>
+                </h2>
+                <p>
+                    This is an example of a custom dashboard I built using python with the bokeh package looking
+                    at the overall premium at certain companies. The dashboard contains a dropdown to change what
+                    variable the graphs show as well as a slider to change the ranges. The code was run through PyCharm.
+                    Check out a live version on the Dashboard Tab.
+
+
+                </p>
+                <p class="post-meta">
+                    Leonel Godoy on December 17, 2020</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="col-lg-10 col-md-10 col-sm-10 mx-auto" >
+        <div class="row post-preview">
+            <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+                <a href="https://github.com/LeonelGodoy/Selenium-Examples" target="_blank">
+                    <img class="portfolio-photo" src="static/css/images/amy.jpg">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-9 col-xs-9">
+                <h2 class="post-title">
+                    <a href="https://github.com/LeonelGodoy/Selenium-Examples" target="_blank">
+                        Selenium-Examples
+                    </a>
+                </h2>
+                <p>
+                    Examples of web page automation with selenium from work and personal projects.
+
+
+                </p>
+                <p class="post-meta">
+                    Leonel Godoy on September 9, 2019</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="col-lg-10 col-md-10 col-sm-10 mx-auto" >
+        <div class="row post-preview">
+            <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+                <a href="https://github.com/LeonelGodoy/Edmunds-Web-Scraping" target="_blank">
+                    <img class="portfolio-photo" src="static/css/images/ZZZ0015.jpg">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-9 col-xs-9">
+                <h2 class="post-title">
+                    <a href="https://github.com/LeonelGodoy/Edmunds-Web-Scraping" target="_blank">
+                        Edmunds-Web-Scraping
+                    </a>
+                </h2>
+                <p>
+                   Web scraping of vehicle data as in price, mileage, model distance and VIN. Then used the VIN to gather data from the carfax website of the vehicle.
+
+
+                </p>
+                <p class="post-meta">
+                    Leonel Godoy on September 8, 2019</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="col-lg-10 col-md-10 col-sm-10 mx-auto" >
+        <div class="row post-preview">
+            <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center">
+                <a href="https://github.com/LeonelGodoy/DOS2-Scripts" target="_blank">
+                    <img class="portfolio-photo" src="static/css/images/ZZZ0010.jpg">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-9 col-xs-9">
+                <h2 class="post-title">
+                    <a href="https://github.com/LeonelGodoy/DOS2-Scripts" target="_blank">
+                        DOS2-Scripts
+                    </a>
+                </h2>
+                <p>
+                    A simple script used to speed up the stats process for the development of a mod called
+                    LEVELS for Divinity Original Sin 2 (DOS2). These scripts used to export stats file from
+                    the DOS2 engine into a csv format, which can be converted back into the stats file once
+                    edited with Excel or Python. Mainly for the purpose of editing, organizing or duplicating
+                    existing entries since the stats editor within the engine was slow when dealing with
+                    multiple records. This was my 1st attempt at adding a GUI to my code which combined
+                    the two separate scripts.
+                </p>
+                <p class="post-meta">
+                    Leonel Godoy on December 27, 2018</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+
+
+
+
+
+
+
+<!--<main class="grid ">-->
+<!--    <figure>-->
+<!--      <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--    <figure>-->
+<!--      <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--    <figure>-->
+<!--      <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--    <figure>-->
+<!--      <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--    <figure>-->
+<!--      <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--    <figure>-->
+<!--        <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--    <figure>-->
+<!--        <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--    <figure>-->
+<!--        <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--    <figure>-->
+<!--        <img src="static/css/images/sheep.jpg" alt="Sample photo">-->
+<!--        <figcaption>-->
+<!--            <div class="overlay-text">Set true or false in HTML script tag for this page black and white.</div>-->
+<!--        </figcaption>-->
+<!--    </figure>-->
+<!--</main>-->
+{% endblock %}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+
+<header>
+    <h1 class="logo"></h1>
+<!--    <a href="#"><img src="static/css/images/vega.jpg" alt="logo" class="logo" width="80" height="80"></a>-->
+    <div class="container">
+        <nav>
+            <ul>
+
+<!--                <li><img class="NavImg" src="static/css/images/sheep.jpg" alt="Sample photo"></li>-->
+                <li><a class="home" href="/home">Leonel Godoy</a></li>
+<!--                <li><a href="/home">Home</a></li>-->
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+{% block content %}
+{% endblock %}
+
+
+
+
+<footer>
+  <div class="footer">
+    ©Xhatoid
+  </div>
+</footer>
+
+</body>
+
+</html>

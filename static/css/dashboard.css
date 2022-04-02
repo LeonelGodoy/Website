@@ -1,0 +1,14 @@
+.embed-wrapper
+{
+  background: white;
+  padding: 1em;
+}
+
+
+body {
+	background-color: white;
+	-webkit-animation: fadeIn 0s;
+	-moz-animation: fadeIn 0s;
+	-o-animation: fadeIn 0s;
+	-ms-animation: fadeIn 0s;
+}

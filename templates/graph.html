@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="http://cdn.bokeh.org/bokeh/release/bokeh-0.9.0.min.css" rel="stylesheet" type="text/css">
+    <script src="http://cdn.bokeh.org/bokeh/release/bokeh-0.9.0.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+    {{ resources|safe }}
+</head>
+
+<style>
+    .embed-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+</style>
+    <body>
+
+
+    {% extends "index.html" %}
+    {% block content %}
+
+
+
+        <div class="embed-wrapper">
+            {{ script|safe }}
+            {{ div|safe }}
+        </div>
+
+    </body>
+
+{% endblock %}
+</html>

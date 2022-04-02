@@ -1,0 +1,29 @@
+
+
+{% extends "index.html" %}
+{% block head %}
+<meta charset="UTF-8">
+<title>Xhatoid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+<link href="http://cdn.bokeh.org/bokeh/release/bokeh-0.9.0.min.css" rel="stylesheet" type="text/css">
+<script src="http://cdn.bokeh.org/bokeh/release/bokeh-0.9.0.min.js"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<center>
+    <h1>
+    This is an Example Dashboard I produced using the python package Bokeh!
+    </h1>
+
+
+    <div class="embed-wrapper">
+    {{ script|safe }}
+    </div>
+</center>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "index.html" %}
+{% block head %}
+<meta charset="UTF-8">
+<title>Xhatoid</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+{% endblock %}
+
+
+
+{% block content %}
+<div class="columns w-row">
+    <div class="leftcontent w-col w-col-6 w-col-stack">
+        <div data-w-id="b84f5156-c6e2-fb1d-6606-98a08030a472" class="image"></div>
+    </div>
+    <div class="rightcontent w-col w-col-6 w-col-stack">
+        <div data-w-id="3fd5aeb3-22da-ed60-7286-0d11f16597d3" class="content">
+            <div class="name">Leonel Godoy</div>
+            <h1 class="tagline"><strong class="bold-text">Amateur</strong></h1>
+            <p class="bio">
+                Welcome, I am a self taught python programmer.
+            <div class="box">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/leonel-g-5a6263149/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/LeonelGodoy" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1886059329&searchtext=" target="_blank"><i class="fa fa-steam" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
