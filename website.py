@@ -46,12 +46,12 @@ def contact():
 # @app.route("/dashboard")
 @app.route('/dashboard')
 def dashboard():
-    script = server_document('https://damp-tundra-65286.herokuapp.com/bkapp')
+    script = server_document('http://localhost:5006/bkapp')
     return render_template("dashboard.html", script=script)
 
 
 def bk_worker():
-    server = Server({'/bkapp': make_doc}, io_loop=IOLoop(), allow_websocket_origin=["https://damp-tundra-65286.herokuapp.com/"])
+    server = Server({'/bkapp': make_doc}, io_loop=IOLoop(), allow_websocket_origin=["https://damp-tundra-65286.herokuapp.com/:{}".format(5000)])
     server.start()
     server.io_loop.start()
 
@@ -60,4 +60,4 @@ Thread(target=bk_worker).start()
 
 if __name__ == '__main__':
     print('Opening single process Flask app with embedded Bokeh application on http://localhost:{}/'.format(5006))
-    app.run()
+    app.run(port=5000, debug=True)
