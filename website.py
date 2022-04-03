@@ -46,7 +46,7 @@ def contact():
 # @app.route("/dashboard")
 @app.route('/dashboard')
 def dashboard():
-    script = server_document('http://localhost:5006/bkapp')
+    script = server_document('https://damp-tundra-65286.herokuapp.com/bkapp')
     return render_template("dashboard.html", script=script)
 
 
@@ -60,4 +60,4 @@ Thread(target=bk_worker).start()
 
 if __name__ == '__main__':
     print('Opening single process Flask app with embedded Bokeh application on http://localhost:{}/'.format(5006))
-    app.run(port=5000, debug=True)
+    app.run()
