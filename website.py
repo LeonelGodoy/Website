@@ -51,7 +51,7 @@ def dashboard():
 
 
 def bk_worker():
-    server = Server({'/bkapp': make_doc}, io_loop=IOLoop(), allow_websocket_origin=["127.0.0.1:{}".format(5000)])
+    server = Server({'/bkapp': make_doc}, io_loop=IOLoop(), allow_websocket_origin=["https://damp-tundra-65286.herokuapp.com/"])
     server.start()
     server.io_loop.start()
 
