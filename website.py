@@ -38,9 +38,9 @@ def dashboard():
     # return render_template("dashboard.html", script=script)
     return render_template("dashboard.html")
 
-@app.route("/test")
-def test():
-    return render_template("test.html")
+# @app.route("/test")
+# def test():
+#     return render_template("test.html")
 #
 # def bk_worker():
 #     server = Server({'/bkapp': make_doc}, io_loop=IOLoop(), allow_websocket_origin=["127.0.0.1:{}".format(5000)])
