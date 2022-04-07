@@ -1,0 +1,33 @@
+
+
+{% extends "index.html" %}
+{% block head %}
+<title>Display Loading Div</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<div class="loader">
+        <div></div>
+    </div>
+    <div class="content">
+        <div class="embed-wrapper">
+        <iframe height="1050" width="1850" src="https://bokeh-example-dashboard.herokuapp.com/main" frameBorder="0"></iframe>
+        </div>
+    </div>
+    <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        });
+    </script>
+
+
+{% endblock %}
