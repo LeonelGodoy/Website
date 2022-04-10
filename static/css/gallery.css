@@ -1,7 +1,9 @@
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  }
+}
+
 .grid img {
   max-width: 100%;
 }
@@ -28,8 +30,6 @@ figcaption {
   -moz-animation: fadeIn 0s;
   -o-animation: fadeIn 0s;
   -ms-animation: fadeIn 0s;
-
-
 }
 
 .overlay-text {
@@ -50,8 +50,14 @@ figure{
   margin:0 0 0rem;
 }
 
-
 img {
     display: block;
     vertical-align: top;
+}
+
+@media screen and (max-width: 991px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
