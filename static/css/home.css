@@ -203,10 +203,6 @@ footer {
     object-position: 50% 0%;
   }
 
-  .columns {
-    display: block;
-  }
-
   .rightcontent {
     padding-top: 120px;
     padding-bottom: 120px;
