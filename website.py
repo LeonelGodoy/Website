@@ -38,6 +38,7 @@ def dashboard():
     # return render_template("dashboard.html", script=script)
     return render_template("dashboard.html")
 
+
 # @app.route("/test")
 # def test():
 #     return render_template("test.html")
@@ -51,4 +52,4 @@ def dashboard():
 # Thread(target=bk_worker).start()
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
