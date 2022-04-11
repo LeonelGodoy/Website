@@ -249,6 +249,10 @@ a:not([href]):not([tabindex]):focus {
   }
 }
 
-
+@media screen and (max-width: 1200px) {
+  .row {
+  flex-direction: column;
+  }
+}
 
 
