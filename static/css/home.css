@@ -32,6 +32,7 @@ header::after {
 
 nav {
   float: left;
+  padding: 10px 0;
 }
 
 nav ul {
@@ -44,6 +45,7 @@ nav li {
   display: inline-block;
   margin-left: 50px;
   padding-top: 23px;
+  bottom:10px;
 
   position: relative;
 }
