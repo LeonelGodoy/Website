@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-import random
 
 app = Flask(__name__)
 
@@ -13,18 +12,15 @@ app = Flask(__name__)
 #     doc.add_root(TABS)
 
 
-# @app.route('/')
-# def template():
-#     return render_template("home.html")
-
 @app.route('/')
+def template():
+    return render_template("home.html")
+
+
 @app.route("/home")
 def home():
-    videos = ['static/css/images/pathfinders.mp4',
-              ]
-    random_index = random.randint(0, len(videos) - 1)
+    return render_template("home.html")
 
-    return render_template("home.html", video=videos[random_index])
 
 @app.route("/gallery")
 def about():
